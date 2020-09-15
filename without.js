@@ -32,7 +32,7 @@ const without = function (arrayOne, arrayTwo){
     for (let j = 0; j < arrayTwo.length; j++){
       if(arrayOne[i] !== arrayTwo[j]){
         // turn the index into a variable, looks nicer
-        let sourceArrayElement = arrayOne[i];
+        const sourceArrayElement = arrayOne[i];
         newArray.push(sourceArrayElement)
       }
     }
