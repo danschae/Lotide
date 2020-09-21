@@ -15,9 +15,6 @@ const letterPositions = function(sentence) {
 
 console.log(letterPositions("i love sehdgfsdh vcdfgkfdlb fthsdsdalgbfzlkgjsbld daflkjadslgak"));
 
-
-
-
 const eqArrays = function (arrayOne, arrayTwo){
   if (arrayOne.length !== arrayTwo.length){
     return false;
@@ -40,3 +37,5 @@ const assertArraysEqual = function(arrayOne, arrayTwo) {
 };
 
 assertArraysEqual(letterPositions("hello").e , [2]);
+
+                                                                                                                                                                                                                                                                                                                               
