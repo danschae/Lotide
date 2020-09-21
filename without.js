@@ -1,25 +1,3 @@
-const eqArrays = function (arrayOne, arrayTwo){
-  if (arrayOne.length !== arrayTwo.length){
-    return false;
-  } else{
-    for (let i = 0; i < arrayOne.length; i++){
-      if(arrayOne[i] !== arrayTwo[i]){
-        return false;
-      }
-    }
-    return true;
-  } 
-}
-
-const assertArraysEqual = function(arrayOne, arrayTwo) {
-  if (eqArrays(arrayOne, arrayTwo) === true) {
-    console.log(`"👍" Assertion Passed `);
-  } else {
-    console.log(`"👎" Assertion Failed `);
-  }
-};
-
-
 const without = function (arrayOne, arrayTwo){
   //make sure input is an array
   if (Array.isArray(arrayOne) === false || Array.isArray(arrayTwo) === false){
@@ -39,7 +17,9 @@ const without = function (arrayOne, arrayTwo){
   } return newArray;
 }
 
-const words = ["hello", "world", "lighthouse", "chicken", 4];
-console.log(without(words, ["lighthouse"]));
+// const words = ["hello", "world", "lighthouse", "chicken", 4];
+// console.log(without(words, ["lighthouse"]));
 
-assertArraysEqual(words, ["hello", "world", "lighthouse"]);
+// assertArraysEqual(words, ["hello", "world", "lighthouse"]);
+
+module.exports = without;

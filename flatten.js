@@ -37,3 +37,5 @@ console.log(flatten([1, 2, [3, [4]], 5, [6]]));
 
 assertArraysEqual(flatten([1,2,3,[4,5],6, [7,8]]), flatten([1,2,3,[4,5],6, [7,8]])) // true
 assertArraysEqual(flatten([1,2,3,[4,5],6, [7,8]]), flatten([1,2,3,[4,5],6, [7,8]])) // fail
+
+module.exports = flatten;
